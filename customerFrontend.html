@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Exercise 3: Fruit Stand</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src = "formChecker.js"></script>
+  </head>
+  <body>
+    <div id="wrapper"></div>
+    <h1 id="head">Electronics Store</h1>
+
+    <form action="customerBackend.php" id="form" method="post" onsubmit="check()">
+    E-mail: <input type="text" id="email" name="email"><br>
+    Password: <input type="text" id="password" name="password"><br>
+
+    <p>Electronics:</p>
+
+      <div>
+        <input type="number" id="Smart Phone" name="Smart Phone" value="0" min="0">
+        <label for="Smart Phone">Smart Phone(s) - 350$</label>
+      </div>
+      <div>
+        <input type="number" id="headphone" name="headphone" value="0" min="0">
+        <label for="headphone">headphone(s) - 50$</label>
+      </div>
+      <div>
+        <input type="number" id="charger" name="charger" value="0" min="0">
+        <label for="charger">charger(s) - 20$</label>
+      </div>
+
+
+		<p>Shipping Options:</p>
+
+    <div>
+      <input type="radio" id="free" name="ship" value="free">
+      <label for="free">Free 7 Day</label>
+    </div>
+    <div>
+      <input type="radio" id="big" name="ship" value="50">
+      <label for="big">$50.00 over night</label>
+    </div>
+    <div>
+      <input type="radio" id="lit" name="ship" value="5">
+      <label for="lit">$5.00 three day</label>
+    </div>
+
+	    <input type="submit">
+      <input type="reset">
+      </form>
+   </body>
+</html>
